@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="NS好友, Switch好友，好友编码">
+    <title>NS好友卡生成器 - TZG.8ot</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.0/js/mdui.min.js"></script>
+    <link href="./css/page.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133358621-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-133358621-4');
+    </script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">NS好友卡生成器</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">主页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://8ot.net">返回主站</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+      <br/>
+      <div class="container">
+        <div class="alert alert-primary" role="alert">感谢使用!如果出现了任何问题,请通过表单进行提交!</div>
+        <div class="card">
+          <div class="card-header">生成好友卡片</div>
+          <div class="card-body">
+            <div class="mb-3">
+                <label for="nickname" class="form-label">昵称</label>
+                <input type="nickname" class="form-control" id="nickname" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="friendcode" class="form-label">好友编码</label>
+                <input type="friendcode" class="form-control" id="friendcode" placeholder="SW-0000-0000-0000">
+              </div>
+          </div>
+        </div>
+        <br/>
+        <div class="div-result">
+          <button type="button" class="btn btn-primary" onclick="getResult()">生成好友卡</button>
+        </div>
+        <br/>
+        <div class="card" style="display:none" id="imgCard">
+            <div class="card-header">结果</div>
+            <div class="card-body">
+              <img id="friendcardimg" src="" height="50%" width="50%">
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">2017 - 现在 | TZG.8ot All rights reserved.</span>
+      </div>
+    </footer>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"><\/script>')</script><script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script></body>
+  <script src="./js/page.js"></script>
+</html>
